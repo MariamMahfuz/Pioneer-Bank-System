@@ -1,0 +1,19 @@
+#form{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 30px;
+}
+
+#transaction-area{
+    display: none;
+    margin-top: 50px;
+}
+
+.calculate{
+    background-color:slateblue;
+    padding:30px;
+    border-radius: 10px;   
+}
+.name{
+    color: rgb(236, 83, 65);
+}

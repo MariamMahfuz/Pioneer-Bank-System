@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pioneer Bank System</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="bank.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class=" mt-5 p5" id="contain">
+            <h1 class="text-center font-weight-bold">Welcome to the Pioneer Bank Account</h1>
+            <div class="row mt-5">
+                <div class="col-lg-2 col-md-1"></div>
+                <div class="col-lg-8 col-md-10">
+                    <div id="form">
+
+                        <h2 class="mb-4">Log in </h2>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-success" id="submitBtn">Submit</button>
+                    </div>
+                    <div class="col-lg-2 col-md-1"></div>
+                </div>
+            </div>
+            <!-- form ends -->
+        </div>
+        <div id="transaction-area">
+            <div class="row text-white text-center">
+                <div class="col-md-4">
+                    <div class="calculate" style=" background-color:slateblue;">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="depo-calculate">000</span></h2>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="calculate" style=" background-color:lightsalmon;">
+                        <h5>Withdraw</h5>
+                        <h2>$ <span id="with-calculate">000</span></h2>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="calculate" style="background-color:orange;">
+                        <h5>Balance</h5>
+                        <h2>$<span id="balance">1240</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div id="form">
+                        <h2 class="mb-4">Deposit </h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="depositAmount"
+                                placeholder="$amount you want to deposit">
+                            <button class="btn mt-3 text-white btn-success" id="depositBtn">Deposit</button>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div id="form">
+                        <h2 class="mb-4">Withdraw </h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="withdrawAmount"
+                                placeholder="$amount you want to withdraw">
+                            <button class="btn mt-3 text-white btn-success" id="withdrawBtn">Withdraw</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: rgb(0, 0, 0) ;margin-top:70px;">
+            <footer>
+                <p class="text-center">
+                    <small>
+                        All rights reserved by <span class="name"><b>Mariam Binte Mahfuz </b> </span>
+                    </small>
+                </p>
+            </footer>
+        </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- js file link -->
+    <script src="bank.js"></script>
+</body>
+
+</html>
